@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Speedrun Hub</h1>
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="sobre.html">Sobre a Comunidade</a>
+            <a href="contato.html">Enviar Run / Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>envie sua Run ou Fale Conosco</h2>
+        <p>bateu seu Personal Best (PB)? Envie as informações abaixo para nossos moderadores analisarem</p>
+        
+        <form action="../php/processa_run.php" method="POST" id="meuFormulario">
+            <div class="campo">
+                <label for="nome">seu nick:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div class="campo">
+                <label for="jogo">jogo / categoria:</label>
+                <input type="text" id="jogo" name="jogo" placeholder="ex: super mario 64" required>
+            </div>
+
+            <div class="campo">
+                <label for="tempo">tempo final:</label>
+                <input type="text" id="tempo" name="tempo" placeholder="ex: 1:38:21" required>
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">link do VOD (YouTube/Twitch) </label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">enviar Dados</button>
+        </form>
+    </main>
+</body>
+</html>

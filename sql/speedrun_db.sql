@@ -1,0 +1,7 @@
+CREATE TABLE runs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    jogo VARCHAR(100) NOT NULL,
+    tempo VARCHAR(50) NOT NULL,
+    mensagem TEXT NOT NULL
+);
